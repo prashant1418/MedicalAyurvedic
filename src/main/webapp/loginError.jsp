@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1 style="color: Green">Welcome to Login </h1>
+<h1 style="color: red">Login Failed..! </h1>
 </body>
 </html>

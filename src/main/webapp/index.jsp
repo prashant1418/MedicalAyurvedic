@@ -31,7 +31,7 @@
 		<div class="row">
 			<div class="col-md-offset-4 col-md-4 box">
 
-				<form class="form-signin" action="login">
+				<form class="form-signin" action="login" method="post">
 					<h2 class="form-signin-heading">Please login</h2>
 					<label for="email">Email:</label>
 					<input type="text" class="form-control" name="userName"

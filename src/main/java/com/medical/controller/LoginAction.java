@@ -12,23 +12,29 @@ import com.medical.dao.LoginDao;
 public class LoginAction {
 	@Autowired
 	LoginDao dao;
+
 	@RequestMapping("/")
 	public String home() {
 		return "index.jsp";
 	}
 
 	@RequestMapping("/login")
-	//public String Login(@RequestParam("username") String name, @RequestParam("password") String password)
-	
-	public String Login(@ModelAttribute LoginBean loginBean )
-	{
-		/*System.out.println(name + "   " + password);
+	// public String Login(@RequestParam("username") String name,
+	// @RequestParam("password") String password)
 
-		LoginBean loginBean = new LoginBean(name,password);*/
-		System.out.println(loginBean);
-		
-		dao.addLogin(loginBean);
-		return "Welcome.jsp";
+	public String Login(@ModelAttribute LoginBean loginBean) {
+		/*
+		 * System.out.println(name + "   " + password); LoginBean loginBean = new
+		 * LoginBean(name,password);
+		 */
+		boolean dataPresentFlag = false;
+		dataPresentFlag = dao.addLogin(loginBean);
+		if (dataPresentFlag) {
+			return "Welcome.jsp";
+		} else {
+			return "loginError.jsp";
+		}
+
 	}
 
 }
