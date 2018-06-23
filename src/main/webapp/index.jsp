@@ -16,14 +16,14 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
-<title>Login V5</title>
+<title>Medical Application</title>
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <style type="text/css">
-.box{
+<!-- .box{
 	
 	border:1px solid #bababa;
 	}
-</style>
+</style> -->
 
 </head>
 <body>
@@ -32,8 +32,8 @@
 			<div class="col-md-offset-4 col-md-4 box">
 
 				<form class="form-signin" action="login" method="post">
-					<h2 class="form-signin-heading">Please login</h2>
-					<label for="email">Email:</label>
+					<h2 class="form-signin-heading">Login here</h2>
+					<label for="email">User Name:</label>
 					<input type="text" class="form-control" name="userName"
 						placeholder="Email Address" required="" autofocus="" /><br>
 						<label for="email">Password:</label>
