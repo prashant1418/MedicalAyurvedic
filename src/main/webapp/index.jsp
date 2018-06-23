@@ -34,7 +34,7 @@
 				<form class="form-signin" action="login">
 					<h2 class="form-signin-heading">Please login</h2>
 					<label for="email">Email:</label>
-					<input type="text" class="form-control" name="username"
+					<input type="text" class="form-control" name="userName"
 						placeholder="Email Address" required="" autofocus="" /><br>
 						<label for="email">Password:</label>
 						 <input
