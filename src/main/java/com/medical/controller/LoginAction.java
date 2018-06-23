@@ -10,11 +10,8 @@ import com.medical.dao.LoginDao;
 
 @Controller
 public class LoginAction {
-	
-	
 	@Autowired
-	LoginDao Ldao;
-	
+	LoginDao dao;
 	@RequestMapping("/")
 	public String home() {
 		return "index.jsp";
@@ -30,7 +27,7 @@ public class LoginAction {
 		LoginBean loginBean = new LoginBean(name,password);*/
 		System.out.println(loginBean);
 		
-		Ldao.addLogin(loginBean);
+		dao.addLogin(loginBean);
 		return "Welcome.jsp";
 	}
 

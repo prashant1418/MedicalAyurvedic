@@ -18,7 +18,5 @@ public class LoginDao {
 	public void addLogin(LoginBean loginBean) {
 		Session session=sessionFactory.getCurrentSession();
 		session.save(loginBean);
-		
-		
 	}
 }
